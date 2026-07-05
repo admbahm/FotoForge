@@ -1,0 +1,5 @@
+# Update this team if repository ownership changes.
+* @admbahm
+/.github/ @admbahm
+/internal/db/ @admbahm
+/internal/provenance/ @admbahm

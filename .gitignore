@@ -1,0 +1,40 @@
+# Go build and test output
+/bin/
+/dist/
+*.exe
+*.exe~
+*.test
+*.out
+coverage.*
+
+# FotoForge catalogs and SQLite artifacts
+/.fotoforge/
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Local configuration and environment
+.env
+.env.*
+!.env.example
+fotoforge.local.yaml
+
+# Editors and IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Operating system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+
+# Default output from go build ./cmd/fotoforge
+/fotoforge

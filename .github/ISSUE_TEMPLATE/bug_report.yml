@@ -1,0 +1,40 @@
+name: Bug report
+description: Report reproducible incorrect or unsafe behavior
+title: "[Bug]: "
+labels: [bug, triage]
+body:
+  - type: markdown
+    attributes:
+      value: Do not attach personal media, catalogs, or sensitive metadata. Report vulnerabilities or potential data-loss issues privately according to SECURITY.md.
+  - type: input
+    id: version
+    attributes:
+      label: FotoForge version
+      description: Output from `fotoforge version`.
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, filesystem, and sanitized configuration.
+    validations:
+      required: true

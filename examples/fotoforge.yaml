@@ -1,0 +1,3 @@
+# Relative paths are resolved from the working directory.
+database_path: .fotoforge/catalog.db
+verbose: false
