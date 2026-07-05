@@ -10,7 +10,7 @@ LDFLAGS := -s -w \
 	-X main.buildDate=$(BUILD_DATE)
 GO_FILES := $(shell find . -type f -name '*.go' -not -path './vendor/*')
 
-.PHONY: fmt vet test build smoke check clean
+.PHONY: fmt vet test build smoke check devlog clean
 
 fmt:
 	gofmt -w $(GO_FILES)
@@ -38,6 +38,9 @@ check:
 	go vet ./...
 	go test ./...
 	$(MAKE) smoke
+
+devlog:
+	./scripts/write-devlog.sh $(slug)
 
 clean:
 	rm -rf bin dist coverage.out
